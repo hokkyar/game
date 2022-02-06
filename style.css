@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Viga&display=swap');
+html,
+body,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 90vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+}
+
+#app .title {
+    font-size: 35px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Viga', sans-serif;
+    color: coral;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.summary {
+    background-color: rgb(252, 244, 244);
+    margin: 10px auto;
+    /* border: 1px solid coral; */
+    max-width: 600px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .5);
+}
+
+.summary h1:first-child,
+.summary h1:nth-child(2),
+.summary h1:nth-child(3) {
+    text-transform: uppercase;
+}
+
+.summary h1:nth-child(2) {
+    margin: 15px 0;
+    font-size: 90px;
+}
+
+.summary h1:nth-child(3) {
+    letter-spacing: 2px;
+}
+
+.match {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.option {
+    text-align: center;
+    font-size: 25px;
+    width: 30%;
+    padding: 30px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: .2s;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
+    background-color: wheat;
+}
+
+.option:hover {
+    cursor: pointer;
+    transform: scale(105%);
+    background-color: coral;
+}
+
+.option:active {
+    background-color: rgb(212, 105, 66);
+}
+
+footer {
+    text-align: center;
+    margin: -23px auto;
+    font-size: 19px;
+}
+
+footer a {
+    text-decoration: none;
+    color: coral;
+    transition: .3s;
+}
+
+footer a:hover {
+    color: rgb(228, 105, 60);
+}
+
+
+/* TABLET VERSION */
+
+@media(max-width: 700px) {
+    .summary h1:nth-child(2) {
+        margin: 15px 0;
+        font-size: 80px;
+    }
+    .summary h1:nth-child(3) {
+        font-size: 23px;
+    }
+    .match {
+        flex-wrap: wrap;
+    }
+    .option {
+        width: 45%;
+        margin: 10px 10px;
+    }
+    .summary {
+        max-width: 560px;
+    }
+}
+
+@media(max-width: 600px) {
+    .summary {
+        max-width: 500px;
+    }
+    .summary h1:nth-child(2) {
+        font-size: 80px;
+    }
+}
+
+
+/* MOBILE VERSION */
+
+@media(max-width: 530px) {
+    .summary {
+        max-width: 450px;
+    }
+}
+
+@media(max-width: 491px) {
+    .summary {
+        max-width: 400px;
+    }
+    .summary h1:nth-child(2) {
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 424px) {
+    .summary {
+        max-width: 365px;
+    }
+}
